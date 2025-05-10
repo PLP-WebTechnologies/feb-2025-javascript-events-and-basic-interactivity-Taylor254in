@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaming and Fitness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Rupa Mall Gaming and Fitness</h1>
+  </header>
+
+  <main>
+    <button id="colorBtn">Click here for orders</button>
+
+    <!-- Image Slideshow -->
+    <div class="slideshow">
+      <img id="slideshow-img" src="https://via.placeholder.com/300x200?text=Image+1" alt="Slideshow Image">
+      <button onclick="nextImage()">Next</button>
+    </div>
+
+    <div class="accordion">
+      <h3 onclick="toggleAccordion()">Toggle Info</h3>
+      <p id="accordion-content" style="display: none;">Hidden Content</p>
+    </div>
+
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+
+    <div id="secretBox" ondblclick="revealSecret()"> Book for a Trainer</div>
+
+    <!-- Form -->
+    <form id="signupForm" onsubmit="return validateForm()">
+      <h2>Signup Form</h2>
+      <label>
+        Email: <input type="email" id="email" required />
+      </label><br/>
+      <label>
+        Password: <input type="password" id="password" required />
+      </label><br/>
+      <button type="submit">Submit</button>
+      <p id="formMsg"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
